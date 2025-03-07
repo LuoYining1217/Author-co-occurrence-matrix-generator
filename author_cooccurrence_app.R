@@ -10,7 +10,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       fileInput("xml_file", "选择XML文件（.txt 或 .xml）", accept = c(".txt", ".xml")),
-      textInput("output_path", "保存路径（包括文件名）", value = "D:/AAA留痕/毕业论文数据/矩阵/共现矩阵.csv"),
+      textInput("output_path", "保存路径（包括文件名）", value = "共现矩阵.csv"),
       actionButton("generate", "生成共现矩阵"),
       downloadButton("download", "下载生成的矩阵")
     ),
